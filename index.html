@@ -1,0 +1,55 @@
+<html>
+
+    <head>
+      <title>Pando WR NFL Stat Form</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+    <div class="jumbotron text-center">
+      <h2>Pando WR NFL Stat Form</h2>
+    </div>
+
+
+    <div class="container">
+
+      <img src="./templates/PandoLogo.jpg" alt="PandoLogo">
+
+      <form action="{{ url_for('form') }}" method="post">
+        targets_first: <br>
+        <input type="test" name="targets_first"></input><br>
+        receptions_first: <br>
+        <input type="text" name="receptions_first"></input><br>
+        yards_first: <br>
+        <input type="text" name="yards_first"></input><br>
+        touchdowns_first: <br>
+        <input type="text" name="touchdowns_first"></input><br>
+        yards_per_reception_first: <br>
+        <input type="text" name="yards_per_reception_first"></input><br>
+        yards_after_catch_first: <br>
+        <input type="text" name="yards_after_catch_first"></input><br>
+        targets_second: <br>
+        <input type="text" name="targets_second"></input><br>
+        receptions_second: <br>
+        <input type="text" name="receptions_second"></input><br>
+        yards_second: <br>
+        <input type="text" name="yards_second"></input><br>
+        touchdowns_second: <br>
+        <input type="text" name="touchdowns_second"></input><br>
+        yards_per_reception_second: <br>
+        <input type="text" name="yards_per_reception_second"></input><br>
+        yards_after_catch_second: <br>
+        <input type="text" name="yards_after_catch_second"></input><br>
+        <br>
+
+        <input type="submit" value="Enter Stats"></input>
+      </form>
+
+    </div>
+    </body>
+
+</html>
